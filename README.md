@@ -1,21 +1,37 @@
 # Wipro-dotNet-Mettl-Logic
 
 ________________________________________________________________________
-*Convet to String: str.ToString();
+*Convet to String: 
 
-*String Length: str.Length;
+str.ToString();
 
-*Even: input1%2==0
+*String Length: 
 
-*Odd: input1%2!=0
+str.Length;
 
-*Last Degit: input1%10
+*Even: 
 
-*Second Last Degit: input1=input1/10; | input1%10;
+input1%2==0
 
-*Exact Multiple: input1%input2==0
+*Odd: 
+
+input1%2!=0
+
+*Last Degit: 
+
+input1%10
+
+*Second Last Degit: 
+
+input1=input1/10;
+input1%10;
+
+*Exact Multiple: 
+
+input1%input2==0
 
 *Prime Number: 
+	
 	int cnt=0;
         for(int i=1;i<=input1;i++){
             if(input1%i==0){
@@ -24,12 +40,14 @@ ________________________________________________________________________
         }
 
 *Factorial:
+	
 	int fact=1;
         for(int i=1;i<=input1;i++){
             fact=fact*i;
         }
 
 *Fibonacci:
+	
 	for(int i=3;i<=input1;i++){
             c=a+b;
             a=b;
@@ -37,6 +55,7 @@ ________________________________________________________________________
         }
 
 *nth Prime: 
+	
 	for(i=2;i>0;i++){
             flag=0;
             for(j=2;j<i;j++){
@@ -55,19 +74,24 @@ ________________________________________________________________________
         }
 
 *All Digits Count:
+
 *Method1:
-	 int cnt=0;
+	
+	int cnt=0;
         while(input1>0){
             int r= input1%10;
             cnt++;
             input1=input1/10;
         }
 
+
 *Method2:
+	
 	int d= input1.ToString().Length;
         return d;
 
 *Unique Digits Count:
+	
 	int temp;
         int cnt=0;
         int [] h=new int [10];
@@ -87,6 +111,7 @@ ________________________________________________________________________
         return cnt;
 
 *Non Repeted Digits:
+	
 	int [] h=new int [10];
         int cnt=0;
         while(input1>0){
@@ -103,7 +128,8 @@ ________________________________________________________________________
         return cnt;
 
 *Digit Sum:
-	while(b){
+		
+		while(b){
 			
 			while(input1>0){
 			int r=input1%10;
@@ -124,6 +150,7 @@ ________________________________________________________________________
 
 
 *Even Digit Sum:
+	 
 	 int sum=0;
         while(input1>0){
             int r=input1%10;
@@ -135,6 +162,7 @@ ________________________________________________________________________
         return sum;
 
 *Odd Digit Sum:
+	
 	int sum=0;
         while(input1>0){
             int r=input1%10;
@@ -146,6 +174,7 @@ ________________________________________________________________________
         return sum;
 
 *Sum Of Even Odd:
+	
 	int sum=0;
         while(input1>0){
             int r=input1%10;
@@ -166,6 +195,7 @@ ________________________________________________________________________
         return sum;
 
 *Palindrome Number:
+	
 	int temp=input1;
         int rev=0;
         while(input1>0)
@@ -180,6 +210,7 @@ ________________________________________________________________________
         }
 
 *Is Palindrome Possible:
+	
 	int []a= new int [10];
         while(input1>0){
             int r=input1%10;
@@ -200,7 +231,8 @@ ________________________________________________________________________
         return 2;
 
 *Pin:
-	 //Write code here
+	
+	//Write code here
         int pin;
         int unitone;
         int tens;
@@ -256,6 +288,7 @@ ________________________________________________________________________
         return th*1000+hun*100+tens*10+unitone;
 
 *Weight Hill Pattern:
+	
 	int i,j,sum=0;
         for( i=0;i<input1;i++){
             for(j=0;j<=i;j++){
@@ -270,6 +303,7 @@ ________________________________________________________________________
         return sum;
 
 *Second Word in UpperCase:
+	
 	string [] s= input1.Split(' ');
         if(s.Length==1){
             return "LESS";
@@ -279,6 +313,7 @@ ________________________________________________________________________
         return s1;
 
 *Palindrome String:
+	
 	input1=input1.ToLower();
         char [] arr=input1.ToCharArray();
         Array.Reverse(arr);
@@ -293,6 +328,7 @@ ________________________________________________________________________
 
 
 *String Weight:
+	
 	String small="abcdefghijklmnopqrstuvwxyz";
         int sum=0;
         int i;
@@ -330,6 +366,7 @@ ________________________________________________________________________
 
 
 *Most Frequent Digit:
+	
 	int []h=new int [10];
         int index=0,max=-1;
         int i;
