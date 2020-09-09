@@ -414,6 +414,30 @@ input1%input2==0
             }
         }
         return index;
+	
+	
+*MettlPDF2
+*FindStringCode:
+	
+	string str=input1.ToUpper();
+        string []word=str.Split(' ');
+        string value2="";
+        for(int i=0;i<word.Length;i++){
+            int sum=0;
+            for(int j=0;j<word[i].Length/2;j++){
+                int first=word[i][j];
+                int last=word[i][word[i].Length-1-j];
+                sum=sum+Math.Abs(first-last);
+            }
+            if(word[i].Length%2!=0){
+                sum=sum+(word[i][word[i].Length/2]-64);
+
+            }
+            string value=sum.ToString();
+            value2=value2+value;
+        }
+        return Int32.Parse(value2);
+
 
 
 
