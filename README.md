@@ -439,6 +439,27 @@ input1%input2==0
         return Int32.Parse(value2);
 
 
+*Get Code Through Strings
+
+	input1=input1.ToUpper();
+        string []s=input1.Split(' ');
+        int arrlength=s.Length;
+        int sum=0;
+        int final=0;
+    
+        for(int i=0;i<arrlength;i++){
+            sum=sum+s[i].Length;
+        }
+        int len=(sum.ToString()).Length;
+        if(sum>9){
+            for(int j=0;j<len;j++){
+                final=sum%10+final;
+                sum=sum/10;
+            }
+            
+        }
+        return final;
+
 
 
 
